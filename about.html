@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>about page</title>
+
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	
+<style>
+  body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 2px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 50px) {
+  .column, input[type=submit] {
+    width: 30%;
+    margin-top: 0;
+  }
+}
+ul {
+  list-style-type: none;
+  margin: 34;
+  padding: 0;
+  overflow: hidden;
+  background-color: blue;
+  list-style-type: none;
+  margin: 100;
+  overflow: hidden;
+  position: absolute;
+  top:-4px;
+  right:550px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 18px 18px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: red;
+}
+  img {
+  height: 170px;
+  width: 14%;
+  position: relative;
+  left: 610px ;
+  top: 429px;
+}
+
+h3 {
+  position: absolute;
+  left: -1px;  
+  color:blue;
+  font-size: 11px;
+  font: serif;
+  top: 89px;
+
+}
+  
+
+
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: white;
+  color: blue;
+  padding-left: : 500px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px;
+
+  
+}
+
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: blue;
+  padding: 30px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 150px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 30%;
+    margin-top: 0;
+  }
+</style>
+
+</head>
+<body>
+
+    <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">about</a></li>
+  <li><a href="contact.html">contact</a></li>
+  <li><a href="gallery.html">gallery</a></li>
+  <li><a href="courses.html">courses</a></li>
+  
+</ul>
+	<img src="images/logo.JPEG">
+  
+	
+
+  
+	
+<div class="container">
+  <h3 style="color: blue; font-size: 15px; padding: 20px;">bugema university is located 32 kilometers north of kAMPALA gayaza zirobwe road <br>its  a seventhday adverntist institution charterd by the government of Uganda <br>with the entry of Adventist church in ugandain 1927 came also the first came also the first Adventist education instution in Nchangwa in west central uganda. The primary  function of this institution was to train pastors and church workers. in 1948 the institution moved to its newly purchased property of 640 archers in bugema from there the institution has grown and has 46 international students who come from different of africa these include southern african countries like zambia ,alawi south africa zimbabwe botswana angola and  many other it has also east african countries west central north west and so its beautiful to study from bugema university  </h3>
+
+
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label  for="fname" style="color: white">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname" style="color: white">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country" style="color: white">Country</label>
+      </div>
+      <div class="col-75">
+        <select id="country"style="color: white" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject" style="color: white">Subject</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px ; width: 240px; "></textarea>
+      </div>
+    </div>
+    <div class="btn">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+ 
+
+
+</body>
+</html>

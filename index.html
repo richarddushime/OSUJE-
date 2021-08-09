@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>home page</title>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	
+	<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">about</a></li>
+  <li><a href="contact.html">contact</a></li>
+  <li><a href="gallery.html">gallery</a></li>
+   <li><a href="courses.html">courses</a>
+
+</ul>
+
+</li>
+<meta name="viewport">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* style the container */
+.container {
+  
+		
+} 
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+.container {
+  position: absolute;
+  width: 50%;
+  top: 160%
+}
+
+.image {
+  display: block;
+  width: 70%;
+  height: 90%;
+}
+
+.overlay {
+  position: absolute;
+  top: 60;
+  left: 70;
+  right: 0;
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+
+}
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+</style>
+</head>
+<body>
+	
+	<img style="border-radius: 45%;" src="images/logo.JPEG">
+	<div>
+		<h1>WELCOME TO BUGEMA UNIVERSITY WEBSITE 2021</h1>
+	</div>
+	<h1 style="font-family: sans-serif; border-left-style: solid;
+  border-left-color: red; color: yellow" >SCHOOL OF COMPUTIMG AND TECHNOLOGY</h1>
+	
+	<h2 style="background-color: lightblue;  color:  blue;font-family:serif; ">APLLY NOW ......?             for all the courses? Come one Come all and Study</h2>
+
+	<p style="color: white"; style="font-size: 18px">A CHARTERED SEVENTHDAY INSTITUTION</p>
+	<style>
+div h1 {
+	position: absolute;
+	top: -190px;
+	right: 50px;
+	 border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px #888888;
+  box-sizing: border-box;
+  width: 70%;
+  font-family:algerian;
+   }
+ 
+
+   
+   h2 {
+	background-color: white;
+	position: absolute;
+	font-style: serif;
+	top: 153px;
+	left: 300px;
+	 }
+
+	
+
+ul {
+  list-style-type: none;
+  margin: 100;
+  padding: 0;
+  overflow: hidden;
+  background-color: darkblue;
+  position: absolute;
+  top: 150px;
+  left:1200px;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: yellow;
+  text-align: right;
+  padding: 24px 26px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: red;
+}
+	img {
+  height: 197px;
+  width: 15%;
+  top: 4px;
+  border: 2px solid white;
+  border-radius: 9px;
+}
+
+h1 {
+  position: absolute;
+  left:10px;  
+  color:white;
+  font-size: 28px;
+  font: serif;
+  top: 240px; 
+}
+div h1 {
+  position: relative;
+  left: 300px;  
+  color:white;
+  font-size: 34px;
+  font: serif;
+}
+	body {
+  background-color: blue;
+}
+
+
+
+
+	h3 {
+		position: absolute;
+		top:100px;
+		color: white;
+		left: 400px;
+	}
+	nav{
+		position: absolute;
+		top: 90px;
+		left: 10px;
+	}
+
+form{
+		position: relative;
+		top: 300px;
+		left: 10px;
+		
+  border-radius: 5px;
+  background-color: white;
+  padding: 30px 0 50px 0;
+	}
+
+</style>
+	
+	
+
+<img src="images/d.jpg" style="position: absolute; left:1000px; top: 700px">
+<img src="images/rr.jpg"style="position: absolute; left:11px; top: 970px">>
+<img src="images/t.jpg" style="position: absolute; left: 1000px; top: 420px">
+
+<img src="images/download.png" style="position:absolute; left: 830px; top: 300px">
+
+
+<h1 style="color: yellow;position: absolute; left:70px; top:650px; font: Times New Roman">WE HAVE THREE DEPERTNMENTS</h1>
+
+<h1 style="color: white;position: absolute; left:10px; top:700px; font-family:sans-serif;">1.Information Systems Depertment</h1>
+<h1 style="color: white;position: absolute; left:10px; top:780px;font-family:sans-serif;">2.Networking And Systems Admnistration</h1>
+<h1 style="color: white;position: absolute; left:10px; top:860px;font-family:sans-serif;">3.Software Engineering</h1>
+<div1>
+<nav style="position: absolute;top: 300px" class="container">
+  <img src="images/cho.JPG" width="60px"; height="40px" alt="Avatar" class="image">
+  <div class="overlay">
+    <div style="color: blue" class="text">BUGEMA UNIVERSITY WELCOMES YOU IN THE NAME OF GOD THE FATHER THE SON AND THE HOLY SPIRIT</div>
+  </nav>
+
+</div>
+<class>
+<div1 class="container">
+  <form action="https://www.w3schools.com/action_page.php">
+    <div class="row">
+      <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
+
+      <div class="col">
+        <a href="#" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="#" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="submit" value="Login">
+      </div>
+    
+    </div>
+  </form>
+    </class>
+</div>
+
+ 
+<h3 style="position: absolute;top:1700px; left: 500px;padding-bottom: 30px;align-items: center;"> <marque> website=www.bugemauniv.ac.ug   </marquee></h3>
+<img src="images/osu.JPG"  style=" position: absolute; left: 500px;top: 940px">
+<img src="images/ap.JPG"  style=" position: absolute; left: 815px;top: 940px">
+<img src="images/6.JPG"  style="width:550px;height:340px; position: absolute; left:780px;top: 1200px">
+
+</body>
+</html>
